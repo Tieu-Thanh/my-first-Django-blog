@@ -63,6 +63,7 @@ h4 {
     float: right;
 }
 
+
 .btn-secondary,
 .btn-secondary:visited {
     color: #C25100;
@@ -74,3 +75,15 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
+
+.actions {
+    display: flex;
+    flex-direction: row; /* This will make the buttons appear horizontally */
+    align-items: center; /* This will vertically align the buttons */
+}
+
+.actions a {
+    margin-right: 10px; /* Adjust the spacing between the buttons as needed */
+}
+
