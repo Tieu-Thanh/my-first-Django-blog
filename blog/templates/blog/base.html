@@ -16,9 +16,9 @@
     <header class="page-header">
         <div class="container">
             {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="material-symbols-outlined">post_add </span></a>
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="material-symbols-outlined" title="Add post">post_add </span></a>
             <a href="{% url 'post_draft_list' %}" class="top-menu"><span
-                    class="material-symbols-outlined">drafts</span></a>
+                    class="material-symbols-outlined" title="Drafts">drafts</span></a>
             <a href="{% url 'logout' %}" class="top-menu"><span class="material-symbols-outlined" title="Logout">logout</span></a>
             <p class="top-menu">Hello {{ user.username }}</p>
             {% else %}
